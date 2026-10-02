@@ -58,7 +58,7 @@ report. For the L-shape, $n$ is even, so the corner $(0.5, 0.5)$ is a node.
 **Measuring the error.** On the square, the exact solution is known as a
 Fourier series:
 
-$$u(x, y) = \sum_{m,\,n \text{ odd}} \frac{16}{\pi^2 m n \left(1 + \pi^2 (m^2 + n^2)\right)} \sin(m\pi x)\,\sin(n\pi y),$$
+$$u(x, y) = \sum_{m,\,n \text{ odd}} \frac{16}{\pi^2 m n \left(1 + \pi^2 (m^2 + n^2)\right)} \sin(m\pi x)\sin(n\pi y),$$
 
 which gives $u(0.5, 0.5) = 0.06981$. On the L-shape there is no formula, so a
 solution on a very fine mesh ($n = 1024$) is used as the reference. Two error
