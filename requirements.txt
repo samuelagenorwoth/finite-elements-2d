@@ -1,0 +1,5 @@
+numpy
+scipy
+matplotlib
+pillow
+sympy  # only needed to run the 2024 scripts (compare_2024.py)
