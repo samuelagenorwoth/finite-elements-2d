@@ -29,7 +29,7 @@ Multiplying the equation by a test function $v$ that vanishes on the boundary
 and integrating by parts gives the weak form: find $u$ with $u = 0$ on
 $\partial\Omega$ such that
 
-$$\int_\Omega u\,v dx + \int_\Omega \nabla u \cdot \nabla v dx = \int_\Omega v dx \quad \text{for all such } v.$$
+$$\int_\Omega u v dx + \int_\Omega \nabla u \cdot \nabla v dx = \int_\Omega v dx \quad \text{for all such } v.$$
 
 Writing $u = \sum_j u_j \varphi_j$ in the piecewise linear "hat" functions
 $\varphi_j$ of a triangle mesh turns this into a linear system
