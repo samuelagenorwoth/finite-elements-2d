@@ -34,7 +34,7 @@ $$\int_\Omega u\,v \,dx + \int_\Omega \nabla u \cdot \nabla v \,dx = \int_\Omega
 Writing $u = \sum_j u_j \varphi_j$ in the piecewise linear "hat" functions
 $\varphi_j$ of a triangle mesh turns this into a linear system
 
-$$(M + K)\,\mathbf{u} = \mathbf{b}, \qquad
+$$(M + K) \mathbf{u} = \mathbf{b}, \qquad
 M_{ij} = \int_\Omega \varphi_i \varphi_j, \quad
 K_{ij} = \int_\Omega \nabla\varphi_i \cdot \nabla\varphi_j, \quad
 b_i = \int_\Omega \varphi_i .$$
@@ -128,9 +128,9 @@ compares it with the 2026 solver.
 4. **The code is shorter and more flexible.** The 2026 code goes through the
    triangles one at a time and adds each triangle's small contribution to the
    big matrix, which is how all finite element software works
-   (element-by-element assembly). This replaces about 300 lines of
-   special-case index bookkeeping, works for any shape made of triangles, and
-   is fast: a $128 \times 128$ mesh takes about 0.2 seconds.
+   (element-by-element assembly). This replaces about 300 lines of hand-built
+   hat functions, gradients and special-case index bookkeeping, works for any
+   shape made of triangles, and is fast: a $128 \times 128$ mesh takes about 0.2 seconds.
 
 ## Repository structure
 
